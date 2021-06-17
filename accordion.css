@@ -33,7 +33,7 @@ body {
   margin: 125px auto;
   width: 850px;
   height:65vh;
-  background-image: url("./images/illustration-woman-online-desktop.svg"), url("./images/bg-pattern-desktop.svg");
+  background-image: url(/images/illustration-woman-online-desktop.svg), url(/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: -85px 70px,-571px -290px;
   background-color: white;
@@ -87,17 +87,14 @@ p {
   float: right;
 }
 
-
-
 /* INPUT type radio */
 input + label + article {
   display: none;
 }
 
 label {
-  display:block;
+  display: block;
   font-size: 14px;
-  width: auto;
 }
 
 input:checked + label + article,
@@ -114,7 +111,7 @@ input:checked + label {
 
 input:checked + label > span {
   content: "";
-  background-image: url("./images/icon-arrow-down.svg");
+  background-image: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center right;
   transform: scaleY(-1);
@@ -146,10 +143,10 @@ div {
   }
 
   .main-container {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 25px;
     margin: 150px auto;
-    width: 65vw;
+    width: 90vw;
     min-width: 300px;
     min-height: 70vh;
     max-height: 90vh;
@@ -160,14 +157,13 @@ div {
     display: block;
     margin: 0 auto;
     background-color: white;
-    padding-top: 10vh;
+    padding-top: 12vh;
     padding-bottom: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    left:0%;
-    top: 1vh;
+    position:unset;
     bottom: auto;
-    width: 65vw;
+    width: 90vw;
     border-radius: 25px;
   }
 
